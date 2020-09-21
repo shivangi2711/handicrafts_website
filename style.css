@@ -116,7 +116,28 @@ display:inline;
 
 
 /* ----------------- shopping cart -------------------*/
-.shopping-cart{
+
+/* .container,
+.products-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  padding-bottom:100px  
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+/* .shopping-cart{
 	margin:200px 0px
   }
 
@@ -339,4 +360,4 @@ display:inline;
    padding: 15px 25px 14px 25px;
    display: block;
    text-align: center;
- }
+ } */

@@ -1,9 +1,3 @@
-a{
-  text-decoration: none !important;
-}.inner-header li{
-display:inline;
-}
-
 .heading{
 
   /* color:black; */
@@ -15,35 +9,53 @@ display:inline;
   }
   
   .navbar li{
-      margin-left:10px;
+    margin-left:5px;
       font-family: "Rokkitt", Georgia, serif;
-      font-weight:bold;
-    color:red;
-  
-  }
-
-  .dropdown a:hover {
-background-color: #e9d8d8;
-
+	  font-weight:bold;
+      color:black; 
+      
   }
   
-.dropdown:hover .dropdown-menu{
-  display: block;
-}
+.navbar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+  
+  .navbar li a:hover:not(.active) {
+    background-color:pink;
+  }
+  
+ 
+  
+  
+/*/////////////////////////////////////////////Sale banner////////////////////////////////*/ 
+  
+ .sale {
+  padding: 14px 0;
+  background:pink; }
+ .sale h3 {
+    margin-bottom: 0;
+    font-family: "Montserrat", Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px; 
+    color: white;
+ }
+.sale h3 a {
+    color:brown;
+    text-decoration:none;	
+  }
 
-  .sale {
-    padding: 14px 0;
-    background: #B22222; }
-   .sale h3 {
-      margin-bottom: 0;
-      font-family: "Montserrat", Arial, sans-serif;
-      text-transform: uppercase;
-      font-size: 20px; }
-  .sale h3 a {
-        color: #fff;
-  text-decoration:none;	  }
-
-
+  
+  
+  
+  
+  
+  
+  
   .banner-text{
       background-color: rgb(0,0,0); /* Fallback color */
       background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
@@ -62,21 +74,10 @@ background-color: #e9d8d8;
       font-family: "Rokkitt", Georgia, serif;
       font-size:30px;
     }
+  
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    /*///////////////  PRODUCT  /////////////////////////*/
+ /*///////////////  PRODUCT  /////////////////////////*/
 
 /*     
     .products h3{
@@ -477,119 +478,11 @@ height:300px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 font-size: 20px;
 }
-  
 
-/*-----------------------------------------ABOUT US PAGE-------------------------------------------*/
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-  width:260px;
-}
-
-.about-section {
-  padding: 50px;
-  text-align: center;    
-  color:black;
-  background-image: linear-gradient(pink, white);
-  font-family: 'Times New Roman', Times, serif;
-  
-}
-
-.about-section h1{
-  font-size: 60px;
-  text-align: center;
-  color:brown;
-}
-
-.describes h2{
-  font-family: 'Times New Roman', Times, serif;
-  color: brown; 
-  padding-bottom: 10px;
-}
-
-
-.team-section{
-    padding-top: 50px;
-}
-
-.team-section h1{
-    font-family: 'Times New Roman', Times, serif;
-    color: brown;
-    font-size: 50px;
-}
-
-.container1 {
-  padding: 0 16px;
-}
-
-.container1::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.team-section .title {
-  color: grey;
-}
-
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
-.icons{
-    padding-left:center;
-    height: auto;
-}
-.icons .fa {
-  padding: 5px;
-  font-size: 20px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-  
-}
-
-.fa:hover {
-  opacity: 0.7;
-}
-
-.fa-facebook {
-background: #3B5998;
-color: white;
-}
-.fa-envelope {
-background: #dd4b39;
-color: white;
-}
-.fa-linkedin {
-background: #007bb5;
-color: white;
-}
 
 
   
-  /* //////////////////////   ABOUT   //////////////////// */
-
-
+  /* ///////////////////////////////////////ABOUT/////////////////////////////////////////////////////// */
   .heading h1{
     font-family: "Rokkitt", Georgia, serif;
     font-size:30px;
@@ -635,13 +528,15 @@ color: white;
       display: block;
       /* padding:20px; */
       margin-left: 60px;
+	  border-radius:100%;
+	  
   }
   
   .icon-text{
       font-size: 20px;
       font-weight: 600;
       margin-left: 130px;
-      color: #212529;
+      color:black;
   }
   .icon-text:hover{
 	  color:#B22222;
@@ -700,96 +595,14 @@ color: white;
     border-radius: 10px;
     width:100px;
   }
-
-
- /* ////////////////////////////About Section/////////////////////////////////////// */
   
- .about h1{
-  font-family: "Rokkitt", Georgia, serif;
-margin-top:50px;
-margin-bottom:50px;
-}
-.about p{
-  font-family: "Rokkitt", Georgia, serif;
-
-  color: black;
   
-  font-weight: bold;
-  /* border: 3px solid #f1f1f1; */
-  position: absolute;
-
-  top: 50%;
-  left:15%;
-  width:70%;
-  background-color: rgb(155, 92, 236);
-  opacity: 0.9;
-padding:10px;
-}
-
-.background-about{
-  background-image:url("../images/about.jpg");
-  background-size: cover;
-background-position: center;
-height:300px;
-
-margin-bottom: 30px;;
-}
-
-.team-img{
-height:225px;
-border:2px solid black;
-
-}
-
-.team-details{
-  font-family: "Rokkitt", Georgia, serif;
-}
-
-
-
-ul.social-buttons li{
-  margin-left:25px;
-  font-size: 15px;
-padding:10px;
-text-align:center;
-  width: 40px;
-  height: 40px;
   
-  color: #fff;
-  border-radius: 100%;
-  outline: 0;
-  background-color: #212529;
-  float: left;
-}
-ul.social-buttons li a {
-color:white;	
-}
-.social-buttons li:hover  {
-background-color: rgb(247, 52, 110);
-}
-
-
-.staff-img{
-  width:225px;
-  height:225px;
-  border-radius: 100%;
-  border:3px solid grey;
-}
-
-
-
-
-/*------------------------------------------Client Section-------------------------------------------*/
-
-.team-section .testimonial h4{
-font-weight:bold;
-color:pink;
-}
-
-
-
-
-/*-------------------------------------------contactus--------------------------------------*/
+  
+  
+  
+  
+  /*-------------------------------------------contactus--------------------------------------*/
 
 .feed_head1{
   font-family: 'Actor';
@@ -912,32 +725,197 @@ color:pink;
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   
-  /*------------------------------------------------------------------FOOTER-------------------------------------------------------------------*/
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    /* ////////////////////////////About Section/////////////////////////////////////// */
+  
+    .about h1{
+      font-family: "Rokkitt", Georgia, serif;
+  margin-top:50px;
+  margin-bottom:50px;
+    }
+    .about p{
+      font-family: "Rokkitt", Georgia, serif;
+  
+      color: black;
+      
+      font-weight: bold;
+      /* border: 3px solid #f1f1f1; */
+      position: absolute;
+  
+      top: 50%;
+      left:15%;
+      width:70%;
+      background-color: rgb(155, 92, 236);
+      opacity: 0.9;
+    padding:10px;
+    }
+  
+    .background-about{
+      background-image:url("../images/about.jpg");
+      background-size: cover;
+    background-position: center;
+    height:300px;
+  
+    margin-bottom: 30px;;
+    }
+  
+    .team-img{
+  height:225px;
+  border:2px solid black;
+  
+    }
+  
+    .team-details{
+      font-family: "Rokkitt", Georgia, serif;
+    }
+  
+  
+    
+    ul.social-buttons li{
+      margin-left:25px;
+      font-size: 15px;
+  padding:10px;
+    text-align:center;
+      width: 40px;
+      height: 40px;
+      
+      color: #fff;
+      border-radius: 100%;
+      outline: 0;
+      background-color: #212529;
+      float: left;
+  }
+  ul.social-buttons li a {
+  color:white;	
+  }
+  .social-buttons li:hover  {
+    background-color: rgb(247, 52, 110);
+  }
+  
+  
+    .staff-img{
+      width:225px;
+      height:225px;
+      border-radius: 100%;
+      border:3px solid grey;
+    }
+	
+	
+		
+	
+/*------------------------------------------Client Section-------------------------------------------*/
+
+.team-section .testimonial h4{
+	font-weight:bold;
+	color:pink;
+}
 
 
-  .footer {
+
+
+/*-------------------------------------- CART  -----------------------------------*/
+
+
+.products-container{
+  max-width:650px;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 50px;
+ 
+}
+.products-container i{
+  font-size: 25px;
+  margin: auto 10px;
+  cursor: pointer;
+}
+
+.product-header{
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 4px solid lightgrey;
+  margin: 0 auto;
+}
+
+.product-title{
+  width: 45%;
+}
+.price{
+  width: 15%;
+  display: flex;
+  align-items: center;
+}
+.quantity{
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+.total{
+  width: 10%;
+  display: flex;
+  align-items: center;
+}
+.product{
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  
+}
+.basketTotalContainer{
+  
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+    }
+.basketTotalTitle{
+  width:30%;
+}
+.basketTotal{
+  width:10%;
+}
+#trash{
+  border-radius:10px;
+  width:30px;
+  height:30px;
+}
+
+#minus{
+  border:none;
+}
+#plus{
+  border:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------FOOTER-------------------------------------------------------------------*/
+
+
+.footer {
     padding: 30px;
     color:black;
     background-image: linear-gradient(pink, white);
@@ -1039,91 +1017,126 @@ body.seo_version .footer-links a:hover{
 
 
 
+
+
+/*-----------------------------------------ABOUT US PAGE-------------------------------------------*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
   
   
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    width:260px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;    
+    color:black;
+    background-image: linear-gradient(pink, white);
+    font-family: 'Times New Roman', Times, serif;
+    
+  }
+  
+  .about-section h1{
+    font-size: 60px;
+    text-align: center;
+    color:brown;
+  }
+
+  .describes h2{
+    font-family: 'Times New Roman', Times, serif;
+    color: brown; 
+    padding-bottom: 10px;
+  }
+
+
+  .team-section{
+      padding-top: 50px;
+  }
+
+  .team-section h1{
+      font-family: 'Times New Roman', Times, serif;
+      color: brown;
+      font-size: 50px;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .team-section .title {
+    color: grey;
+  }
   
   
-  
- 
-  
-  
-  
-  
-  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  .icons{
+      padding-left:center;
+      height: auto;
+  }
+  .icons .fa {
+    padding: 5px;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-envelope {
+  background: #dd4b39;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
 
   
-  
-    /* ////////////      About page         //////////// */
-  
-    /* .about h1{
-      font-family: "Rokkitt", Georgia, serif;
-  margin-top:50px;
-  margin-bottom:50px;
-    }
-    .about p{
-      font-family: "Rokkitt", Georgia, serif;
-  
-      color: black;
-      
-      font-weight: bold; */
-      /* border: 3px solid #f1f1f1; */
-      /* position: absolute;
-  
-      top: 50%;
-      left:15%;
-      width:70%;
-      background-color: rgb(155, 92, 236);
-      opacity: 0.9;
-    padding:10px;
-    }
-  
-    .background-about{
-      background-image:url("../images/about.jpg");
-      background-size: cover;
-    background-position: center;
-    height:300px;
-  
-    margin-bottom: 30px;;
-    }
-  
-    .team-img{
-  height:225px;
-  border:2px solid black;
-  
-    }
-  
-    .team-details{
-      font-family: "Rokkitt", Georgia, serif;
-    }
-  
-  
-    
-    ul.social-buttons li{
-      margin-left:25px;
-      font-size: 15px;
-  padding:10px;
-    text-align:center;
-      width: 40px;
-      height: 40px;
-      
-      color: #fff;
-      border-radius: 100%;
-      outline: 0;
-      background-color: #212529;
-      float: left;
-  }
-  ul.social-buttons li a {
-  color:white;	
-  }
-  .social-buttons li:hover  {
-    background-color: rgb(247, 52, 110);
-  }
-  
-  
-    .staff-img{
-      width:225px;
-      height:225px;
-      border-radius: 100%;
-      border:3px solid grey;
-    } */
-    
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
